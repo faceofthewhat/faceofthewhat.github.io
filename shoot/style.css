@@ -1,0 +1,92 @@
+.video-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .video-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .video {
+    width: 200%;
+    padding: 20px;
+  }
+  .video-container {
+    text-align: center; /* centers the text */
+  }
+  
+  .video-container {
+    display: block; /* makes the <a> element a block-level element */
+    margin: 0 auto; /* centers the element horizontally */
+  }
+
+  body {
+    background-color: black;
+    }
+
+    h3 {
+        color: white;
+        }
+
+     .hide-link {
+            display: none;
+        }
+
+
+
+        .h1 {
+            text-align: center; /* centers the text */
+          }
+          
+        .h1 {
+            display: block; /* makes the <a> element a block-level element */
+            margin: 0 auto; /* centers the element horizontally */
+          }
+
+          #hide-link {
+            animation: color-change 5s ease infinite;
+          }
+          
+          @keyframes color-change {
+            0%   {color: red;}
+            20%  {color: orange;}
+            40%  {color: yellow;}
+            60%  {color: green;}
+            80%  {color: blue;}
+            100% {color: purple;}
+          }
+
+          .ascii-art {
+            white-space: pre;
+          }
+
+          header {
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            padding: 1em;
+            margin: 0 auto;
+            width: 80%; /* set the width of the header */
+            text-align: center; /* center the text inside the header */
+            list-style-type: none
+          }
+
+          .floating-text {
+            animation: float 4s ease-in-out infinite;
+          }
+          
+          @keyframes float {
+            0% {
+              transform: translateY(0);
+            }
+            50% {
+              transform: translateY(-10px);
+            }
+            100% {
+              transform: translateY(0);
+            }
+          }
+          .p 
+          {
+            text-size-adjust: 59px;
+          }
