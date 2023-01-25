@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Introduction Page</title>
+    <title>Click to Access</title>
+    <style>
+      /* Styles for the "click to access" button */
+      .access-button {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 20px auto;
+        cursor: pointer;
+      }
+
+      /* Styles for the locked content */
+      .locked-content {
+        display: none; /* Initially hide the locked content */
+        text-align: center;
+        margin: 20px auto;
+      }
+    </style>
   </head>
   <body>
     <h1>Welcome to my website!</h1>
-    <p>This is the introduction section of my website. Please take a moment to read through it before proceeding to the main page.</p>
-    <a href="main.html">Go to main page</a>
+    <p>This is a "click to access" page. Click the button below to unlock the content.</p>
+    <button class="access-button">Click to access</button>
+
+    <div class="locked-content">
+      <h2>Congratulations! You've unlocked the content.</h2>
+      <p>This is the locked content that is now visible. You can add any other HTML elements here.</p>
+    </div>
+
+    <script>
+      // Get the button and the locked content
+      var button = document.querySelector(".access-button");
+      var lockedContent = document.querySelector(".locked-content");
+
+      // Add a click event listener to the button
+      button.addEventListener("click", function() {
+        lockedContent.style.display = "block"; // Show the locked content
+        button.style.display = "none"; // Hide the button
+      });
+    </script>
   </body>
 </html>
